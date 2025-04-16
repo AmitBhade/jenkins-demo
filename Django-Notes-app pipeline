@@ -1,0 +1,36 @@
+pipeline{
+    
+    agent { label "vinod"}
+    
+    stages{
+        
+        stage("code"){
+            steps{
+                echo "This is Cloning the code"
+            }
+            
+        }
+        stage("Build"){
+            steps{
+                echo "This is building the code"
+            }
+            
+        }
+        stage("Test"){
+            steps{
+                 echo "This is testing the code"
+            }
+            
+        }
+        stage("Deploy"){
+            steps{
+                 echo "This is deploying the code"
+            }
+        
+        }
+        
+        
+    }
+    
+    
+}
